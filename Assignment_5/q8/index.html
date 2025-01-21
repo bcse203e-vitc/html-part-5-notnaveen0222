@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <div class="form-title">Login</div>
+        <div class="form-section-1">
+          <label class="label" for="Email">Email</label>
+          <input
+            class="input"
+            id="Email"
+            placeholder="enter your email"
+            type="email"
+            required
+          />
+        </div>
+        <div class="form-section-1">
+          <label class="label" for="password">Password</label>
+          <input
+            class="input"
+            id="password"
+            placeholder="enter your password"
+            type="password"
+            required
+            minlength="6"
+          />
+        </div>
+        <div class="form-section-2">
+          <input type="checkbox" name="" id="check-box" />
+          <label for="check-box">Remember Me</label>
+        </div>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

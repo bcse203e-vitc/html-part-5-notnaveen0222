@@ -1,0 +1,28 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  padding: 2% 2%;
+  margin: 2% 2%;
+  border: 1px black solid;
+  transition: all 0.5s linear;
+}
+
+.box:hover {
+  border: 100px gray solid;
+}

@@ -1,0 +1,98 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  height: 70px;
+  background-color: rgba(240, 128, 128, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  font-size: 20px;
+  overflow: hidden;
+}
+.navbar-right-section {
+  display: flex;
+  gap: 30px;
+}
+.navbar-button {
+  cursor: pointer;
+  animation: fadeUp 0.3s linear 0s;
+}
+.right-button:hover {
+  animation: text-color-animator 1s linear 0s infinite, fadeUp 0.3s linear 0s;
+}
+
+.hero-section {
+  flex-grow: 1;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.hero-desc {
+  font-size: 30px;
+}
+
+.text-color-animation {
+  animation: text-color-animator 1s linear 0s infinite, fadeUp 0.3s linear 0s;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-color-animation:hover {
+  scale: 1.5;
+}
+
+.hero-text {
+  animation: size-animation 0.7s linear 0s;
+  transform: scale(1);
+}
+.hero-text:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translate(0px, 50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-color-animator {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes size-animation {
+  0% {
+    scale: 0.3;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
