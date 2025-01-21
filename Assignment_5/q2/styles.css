@@ -25,6 +25,7 @@ body {
     gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    cursor: pointer;
 }
 
 .card-title{
@@ -36,9 +37,10 @@ body {
 }
 
 .card:hover{
-    background-color: #4CAF50;
+    background-color: #4cd451;
     transition: all 0.2s linear;  
     box-shadow: 5px 5px 12px rgba(0, 0, 0,0.3);
+    scale: 1.1;
 }
 
 @media (max-width: 768px) {
